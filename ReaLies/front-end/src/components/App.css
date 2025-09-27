@@ -189,6 +189,7 @@ body {
   height: 200%;
   background: radial-gradient(circle, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0) 70%);
   animation: rotate 10s linear infinite;
+  pointer-events: none;
 }
 
 @keyframes rotate {
@@ -383,7 +384,6 @@ body {
   font-weight: 600;
 }
 
-/* Buttons */
 .action-buttons {
   display: flex;
   gap: 1rem;
@@ -403,6 +403,9 @@ body {
   gap: 0.5rem;
   min-width: 150px;
   justify-content: center;
+  cursor: pointer !important;
+  position: relative;
+  z-index: 10;
 }
 
 .btn:disabled {

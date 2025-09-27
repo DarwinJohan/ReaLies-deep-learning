@@ -244,7 +244,7 @@ const App = () => {
                 <button 
                   className={`btn primary ${isAnalyzing ? 'analyzing' : ''} ${!selectedFile ? 'disabled' : ''}`}
                   onClick={handleAnalyze}
-                  disabled={!selectedFile || isAnalyzing}
+
                 >
                   {isAnalyzing ? (
                     <>
